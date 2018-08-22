@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>FORM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+<body>  
+
+<p><span class="error">* Required field</span></p>
+
+ <form  class="forform" method="post" target="_self" action="form.php" enctype="multipart/form-data">  
+  
+    <div class="text">
+      FIRST NAME :<br>
+      <input type="text" name="first_name" pattern="[A-Za-z]+" title="FISRT NAME" required="true">
+      <span class="error">*</span>
+    </div>
+  
+
+    <div class="text">
+      LAST NAME :<br>
+      <input type="text" name="last_name" pattern="[A-Za-z]+" title="LAST NAME" required="true">
+      <span class="error">*</span>
+    </div>
+
+
+    <div class="text">
+      E-mail :<br>
+      <input type="email" name="email"  title="E-mail" required="true">
+      <span class="error">*</span>
+    </div>
+
+
+    <div class="text">
+        Number :<br>
+        <input type="text" name="number" pattern="\+91[789][0-9]{9}"  maxlength="13" title="Phone number" required="true">
+        <span class="error">*</span>
+    </div>
+
+    <div class="text">
+        <input type="submit" name="submit" title="SUBMIT" value="Submit">
+    </div>
+  
+</form>
+
+</body>
+</html>
+
+
