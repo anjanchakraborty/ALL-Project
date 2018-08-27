@@ -1,0 +1,51 @@
+Mysql Queries:
+ For changing column name in a table : 
+ ALTER TABLE title CHANGE COLUMN WORKER_REF_ID WORKER_ID INT;
+
+ALTER TABLE table_name
+CHANGE COLUMN old_column_name new_column_name data_type;  
+
+
+1 Alias name: 
+SELECT FIRST_NAME AS WORKER_NAME FROM worker;
+
+2 For upper case: 
+SELECT UPPER(FIRST_NAME) AS WORKER_NAME FROM worker;     UPPER():Mysql function 
+
+3 For unique : 
+select distinct DEPARTMENT FROM worker;
+
+4 Selecting first 3 characters from column: 
+SELECT LEFT(FIRST_NAME , 3) FROM worker;
+
+
+
+6 Trimming white spaces from right side: 
+select RTRIM(FIRST_NAME) from worker;
+
+7 Combining two columns into one using concat: 
+select * ,concat(FIRST_NAME, ' ', LAST_NAME) AS COMPLETE_NAME FROM worker;              COMPLETE_NAME is the new column.
+
+8 Order by first name in ascending order:  
+select * from worker order by FIRST_NAME ASC;
+
+9 Printing two particular names using where keyword  :  
+select * from worker where FIRST_NAME='Vipul' OR FIRST_NAME='Satish';
+
+10 Worker details with department name Admin :  
+select * FROM worker where DEPARTMENT='Admin';
+
+11 Print worker details with salary in between 100000 and 500000 :
+select * from worker where SALARY between 100000 and 500000;
+
+12 Number of employees working in admin department : 
+select Count(DEPARTMENT) FROM worker where DEPARTMENT='Admin';
+
+13 Worker Names with salary in between 50000 and 100000 :  
+select FIRST_NAME,LAST_NAME,SALARY from worker where SALARY between 50000 and 100000;
+
+14 Print number of workers for each department  in the descending order: 
+select DEPARTMENT, COUNT(*) FROM worker GROUP BY DEPARTMENT order by COUNT(*) desc;
+
+15 Print details of workers those who are managers:
+select worker.*, title.WORKER_TITLE FROM worker INNER JOIN title on worker.WORKER_ID = title.WORKER_ID where title.WORKER_TITLE='Manager';
