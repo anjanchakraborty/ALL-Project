@@ -1,0 +1,25 @@
+uuid: efb26e9b-9035-4472-9963-8c2839fd262b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b94f76d7-9b98-4790-a050-baee72f8cfed'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: myfirstblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:b94f76d7-9b98-4790-a050-baee72f8cfed'
+settings:
+  id: 'block_content:b94f76d7-9b98-4790-a050-baee72f8cfed'
+  label: 'Gears of war'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

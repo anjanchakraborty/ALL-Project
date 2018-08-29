@@ -1,0 +1,22 @@
+uuid: 6aafc289-262f-4af7-a3fc-cfec92aeb966
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: custom_webform
+label: 'Custom webform'
+type: 'canonical_entities:node'
+pattern: 'employee_details/[node:webform:target_id]'
+selection_criteria:
+  d6dda1e3-e1ec-42fe-b652-584ed95771eb:
+    id: node_type
+    bundles:
+      webform: webform
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d6dda1e3-e1ec-42fe-b652-584ed95771eb
+selection_logic: and
+weight: -5
+relationships: {  }
