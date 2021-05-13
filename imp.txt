@@ -91,8 +91,8 @@ Sending thank you mail on submit using webform module:
  6. SMTP port: 465 in case of gmail. 
  7. Use SSL encrypted protocol.
  8.SMTP AUTHENTICATION
-    Username:anjan.chakraborty@innoraft.com
-    password:my password
+    Username:
+    password
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 
