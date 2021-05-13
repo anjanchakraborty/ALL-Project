@@ -1,7 +1,0 @@
-{
-  "name": "drupal/hello_world",
-  "description": "Creates a page showing Hello World.",
-  "type": "drupal-module",
-  "homepage": "https://www.drupal.org/project/smtp",
-  "license": "GPL-2.0"
-}
